@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.card{
+    flex-wrap: wrap ;
+    margin: 0 17px 20px;
+    /* margin: auto; */
+}
+.card-img-top {
+  width: 100% !important;
+  height: 250px !important;
+  border-bottom: 1px solid grey;
+}
+.img {
+    display: flex;
+    flex-wrap: wrap;
+}
+.h5{
+    font-size: 1rem !important;
+}
+.price{
+    font-weight: bolder !important;
+}
+.cat{
+    color: slategrey;
+}
+.card-title{
+    height: 75px;
+}
+.navbar p{
+    color: aliceblue;
+    font-size: large;
+}
+.navbar p span{
+    font-size: normal;
+}
+.card{
+    margin-top: 200px !important;
+}
+.spinner-border{
+    position: absolute;
+    top: 50%;
+    left: 47%;
+}
