@@ -11,12 +11,14 @@ function Header() {
   const count = useSelector(state => state.product)
   return (
     <div>
-      <Navbar bg="dark" variant="dark">
+      <Navbar bg="dark" variant="dark" fixed='top'>
         <Container>
           <Navbar.Brand>Navbar</Navbar.Brand>
-          <Nav className="me-auto ms-5">
-            <Link to='/' className='nav-link'>Products</Link>
+          <Nav className="ms-5 me-auto">
+            <Link to='/' className='nav-link' style={{ color: 'white' }}>Products</Link>
+            <Link to='/cart' className='nav-link' style={{ color: 'white' }}>Cart</Link>
           </Nav>
+          
           <Link to='/cart' className='navbar-brand'><BsFillCartFill />cart</Link>
           <Link to='/cart' className='btn btn-primary'>{count.length}</Link>
         </Container>

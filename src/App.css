@@ -6,7 +6,6 @@
 .card{
     flex-wrap: wrap ;
     margin: 0 17px 20px;
-    /* margin: auto; */
 }
 .card-img-top {
   width: 100% !important;
@@ -42,5 +41,9 @@
 .spinner-border{
     position: absolute;
     top: 50%;
-    left: 47%;
+    left: 48%;
+}
+.spacer
+{
+    padding-top: 200px;
 }

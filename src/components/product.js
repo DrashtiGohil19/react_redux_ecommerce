@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
 import Spinner from 'react-bootstrap/Spinner';
 import { useEffect, useState } from "react";
-import { Container, Row, Button } from "react-bootstrap";
+import { Container, Row, Button, NavItem } from "react-bootstrap";
 import Header from "./header";
 import { useDispatch } from "react-redux";
 import { increment } from "../action/slice";
@@ -23,15 +23,15 @@ function Product() {
                 setstatus(true);
             })
     }, [])
-
+   
 
     if (status) {
         return (
             <>
                 <Header/>
-                <div>
+                <div className="pt-5">
                 <Container>
-                    <Row className="justify-content-center">
+                    <Row className="justify-content-center p-3">
                         {
                             product.map((data, index) => {
                                 return (
